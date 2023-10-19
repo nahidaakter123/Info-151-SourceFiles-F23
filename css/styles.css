@@ -358,6 +358,16 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--blue);
+  padding: 20px 28px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
@@ -393,3 +403,6 @@ header {
 /* =============
     Hero
 ============= */
+hero {
+  margin-top: 300px;
+}
