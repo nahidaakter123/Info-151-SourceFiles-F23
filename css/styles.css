@@ -394,12 +394,14 @@ textarea {
 /* =============
     plans
 ============= */
+
 #plans {
-  margin-top: 110px;
+  margin-top:0px;
 }
 #plans .plans-card {
   margin-bottom: 100px;
 }
+
 #plans #purple-highlight {
-  background-color: red;
+  background-color: var(--purple);
 }
