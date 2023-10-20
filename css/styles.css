@@ -13,6 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --light-blue:#44B4EE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -337,6 +338,10 @@ template {
 /* =============
     Buttons
 ============= */
+.lightblue-btn {
+  background-color: var(--light-blue);
+}
+
 /* =============
     Forms
 ============= */
@@ -366,3 +371,12 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--black);
+}
+footer p {
+  color: var(--white);
+}
+footer h2 {
+  color: var(--white);
+}
