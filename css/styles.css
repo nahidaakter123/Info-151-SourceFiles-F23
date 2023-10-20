@@ -13,6 +13,9 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --purple:#7733DC;
+  --Blue: #2AF6FF;
+  --lightblue:#42B4EE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,9 +337,31 @@ template {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
+.lightblue-btn {
+  background-color: var(--lightblue);
+  color: var(--white);
+  padding: 15px, 30px;
+  border-radius: 8px;
+}
+
 /* =============
     Forms
 ============= */
@@ -366,3 +391,15 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    plans
+============= */
+#plans {
+  margin-top: 110px;
+}
+#plans .plans-card {
+  margin-bottom: 100px;
+}
+#plans #purple-highlight {
+  background-color: red;
+}
