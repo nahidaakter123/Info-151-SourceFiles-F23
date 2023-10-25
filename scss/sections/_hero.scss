@@ -2,9 +2,16 @@
     Hero
 ============= */
 #hero{
-    
-
-    p{
-        margin-bottom: 100px;
+    margin-top: 50px;
+    section{
+    h1{
+           color: var(--white);
+           margin: 10px;
+        }
+        p{
+            color: var(--white);
+            margin-bottom: 20px;
+        }
     }
+
 }

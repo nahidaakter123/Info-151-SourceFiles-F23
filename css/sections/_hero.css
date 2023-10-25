@@ -1,0 +1,10 @@
+/* =============
+    Hero
+============= */
+#hero {
+  margin-top: 110px;
+}
+#hero section h1 {
+  color: var(--white);
+  margin: 300px;
+}

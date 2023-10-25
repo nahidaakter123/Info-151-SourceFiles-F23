@@ -364,8 +364,15 @@ button {
 
 .blue-btn {
   background-color: var(--blue);
+  color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.blue-btn:hover {
+  background-color: var(--black);
 }
 
 /* =============
@@ -391,12 +398,49 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--blue);
+}
+nav ul li a.selected {
+  color: var(--blue);
+}
+nav ul #trail {
+  margin-left: auto;
+}
+
 /* =============
     Header
 ============= */
 header {
   background-color: var(--purple);
+  padding: 22px;
+  border-radius: 6px;
+  margin-top: 20px;
 }
+
 /* =============
     Footer
 ============= */
@@ -404,8 +448,13 @@ header {
     Hero
 ============= */
 #hero {
-  margin: 110px;
+  margin-top: 50px;
 }
-#hero p {
-  margin-bottom: 100px;
+#hero section h1 {
+  color: var(--white);
+  margin: 10px;
+}
+#hero section p {
+  color: var(--white);
+  margin-bottom: 20px;
 }
