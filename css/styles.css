@@ -337,19 +337,25 @@ template {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5 {
-  margin: 0;
-  padding: 0;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px;
+  padding: 10px;
+  font-weight: 500;
 }
 
 p {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 200;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* =============
@@ -358,8 +364,18 @@ ul {
 .lightblue-btn {
   background-color: var(--lightblue);
   color: var(--white);
-  padding: 15px, 30px;
-  border-radius: 8px;
+  padding: 40px, 20px;
+  border-radius: 10px;
+}
+.lightblue-btn a:link, .lightblue-btn a:visited {
+  color: var(--lightblue);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.lightblue-btn a:hover, .lightblue-btn a:active {
+  color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /* =============
@@ -394,12 +410,26 @@ textarea {
 /* =============
     plans
 ============= */
-#plans {
-  margin-top: 110px;
+#plans div h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
-#plans .plans-card {
-  margin-bottom: 100px;
+#plans div h2 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
-#plans #purple-highlight {
-  background-color: red;
+#plans div img {
+  margin: 0 auto;
+}
+
+.plans-card {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#purple-highlight {
+  background-color: var(--purple);
 }
