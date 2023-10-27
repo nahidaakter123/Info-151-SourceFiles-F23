@@ -4,10 +4,28 @@
 footer{
 
     background-color:var(--black);
+
     p{
         color:var(--white);
+}
+
+h2{
+    color: var(--white);
+   ul{
+        li{
+            a{
+                text-decoration: none;
+                color: var(--white);
+            }
+        }
     }
-    h2{
+}
+
+    h3{
+
         color: var(--white);
+        font-weight: 500;
     }
+
+
 }
