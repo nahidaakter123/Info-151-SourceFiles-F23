@@ -389,10 +389,10 @@ footer {
 footer p {
   color: var(--white);
 }
-footer h2 {
+footer #footer-card h2 {
   color: var(--white);
 }
-footer h2 ul li a {
+footer #footer-card h2 ul li a {
   text-decoration: none;
   color: var(--white);
 }
