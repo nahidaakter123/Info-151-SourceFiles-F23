@@ -2,9 +2,27 @@
     Hero
 ============= */
 #hero {
-  margin-top: 110px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 36% auto;
+  grid-template-columns: 36% auto;
+}
+#hero section {
+  margin-top: 260px;
 }
 #hero section h1 {
   color: var(--white);
-  margin: 300px;
+  margin: 10px;
+}
+#hero section #hero-title-container-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#hero section p {
+  color: var(--white);
+  margin-bottom: 20px;
 }

@@ -3,14 +3,29 @@
 ============= */
 #hero{
     margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    grid-template-columns: 36% auto;
+
     section{
+
+        margin-top: 260px;
     h1{
            color: var(--white);
            margin: 10px;
         }
+        #hero-title-container-top{
+
+        }
+
+        #hero-title-container-bottom{
+           display: flex;
+        }
+
         p{
             color: var(--white);
             margin-bottom: 20px;
+
         }
     }
 

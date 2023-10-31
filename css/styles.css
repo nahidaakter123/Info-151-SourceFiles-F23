@@ -349,6 +349,10 @@ body main #main-grid-item {
   grid-area: main-grid-item;
 }
 
+#validation-bnt {
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -457,8 +461,8 @@ header {
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% auto;
-  grid-template-columns: 40% auto;
+  -ms-grid-columns: 60% auto;
+  grid-template-columns: 60% auto;
 }
 header #logo-container {
   display: -webkit-box;
@@ -467,6 +471,8 @@ header #logo-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
 }
 
 /* =============
@@ -477,10 +483,24 @@ header #logo-container {
 ============= */
 #hero {
   margin-top: 50px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
+}
+#hero section {
+  margin-top: 260px;
 }
 #hero section h1 {
   color: var(--white);
   margin: 10px;
+}
+#hero section #hero-title-container-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #hero section p {
   color: var(--white);
