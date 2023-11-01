@@ -1,5 +1,25 @@
 /* =============
     Base
 ============= */
+body{
+    main{
+        display: grid;
+        grid-template-columns: auto 1140 auto;
+        grid-template-areas: ". grid-content .";
 
 
+
+        #main-grid-item{
+            grid-area: grid-content;
+
+        }
+    }
+
+
+
+
+    #validation-btn{
+        text-align: center;
+    }
+
+}

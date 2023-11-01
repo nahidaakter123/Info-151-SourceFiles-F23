@@ -2,7 +2,10 @@
     plans
 ============= */
 #plans{
+    
     div{
+        display: grid;
+        
    
         h1{
             font-weight: 700;
@@ -18,21 +21,26 @@
         }
 
         img{
-            margin:0 auto;
+            text-align: center;
         }
 
         }
+
+        //display: grid;
+        //grid-template-columns: repeat(3,1fr);
     
     }
 
 
+
     .plans-card{
-        
+
         margin-top: 50px;
         margin-bottom: 30px;
         }
         #purple-highlight{
         background-color: var(--purple);
+
         
     }
 
