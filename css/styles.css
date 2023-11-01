@@ -487,8 +487,8 @@ header #logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-columns: 50% auto;
-  grid-template-columns: 50% auto;
+  -ms-grid-columns: 36% auto;
+  grid-template-columns: 36% auto;
 }
 #hero section {
   margin-top: 260px;
