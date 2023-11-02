@@ -12,6 +12,7 @@
             text-align: center;
             margin-top: 50px;
             margin-bottom: 10px;
+            font-weight: bold;
         }
 
         h2{
@@ -25,23 +26,32 @@
         }
 
         }
-
-        //display: grid;
-        //grid-template-columns: repeat(3,1fr);
     
     }
 
 
 
-    .plans-card{
+    #plans-card-grid-items{
 
-        margin-top: 50px;
-        margin-bottom: 30px;
-        }
-        #purple-highlight{
-        background-color: var(--purple);
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
 
-        
+        .plans-card{
+            h3{
+                font-weight: 500;
+                padding-right: 110px;
+            }
+           h4{
+            font-weight: 500;
+           }
+            margin-top: 50px;
+            margin-bottom: 30px;
+            }
+            #purple-highlight{
+            background-color: var(--purple);
     }
+    
 
+
+    }
 

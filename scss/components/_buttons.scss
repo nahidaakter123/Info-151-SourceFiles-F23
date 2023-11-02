@@ -2,11 +2,27 @@
     Buttons
 ============= */
 
+#blue-btn{
+    a:link, a:visited{
+        color: var(--lightblue);
+        transition: 0.25s;
+    
+    }
+    
+    a:hover, a:active{
+        color: var(--black);
+        transition: 0.25s;
+    
+    }
+
+}
+
+
 .lightblue-btn{
 background-color: var(--lightblue);
 color: var(--white);
-padding:40px, 20px;
-border-radius: 10px; 
+padding:50px, 30px;
+border-radius: 50px; 
 a:link, a:visited{
     color: var(--lightblue);
     transition: 0.25s;

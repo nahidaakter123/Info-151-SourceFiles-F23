@@ -377,11 +377,22 @@ ul {
 /* =============
     Buttons
 ============= */
+#blue-btn a:link, #blue-btn a:visited {
+  color: var(--lightblue);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#blue-btn a:hover, #blue-btn a:active {
+  color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .lightblue-btn {
   background-color: var(--lightblue);
   color: var(--white);
-  padding: 40px, 20px;
-  border-radius: 10px;
+  padding: 50px, 30px;
+  border-radius: 50px;
 }
 .lightblue-btn a:link, .lightblue-btn a:visited {
   color: var(--lightblue);
@@ -435,6 +446,7 @@ textarea {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 #plans div h2 {
   text-align: center;
@@ -445,11 +457,23 @@ textarea {
   text-align: center;
 }
 
-.plans-card {
+#plans-card-grid-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[3];
+  grid-template-columns: repeat(3, 2fr);
+}
+#plans-card-grid-items .plans-card {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-
-#purple-highlight {
+#plans-card-grid-items .plans-card h3 {
+  font-weight: 500;
+  padding-right: 110px;
+}
+#plans-card-grid-items .plans-card h4 {
+  font-weight: 500;
+}
+#plans-card-grid-items #purple-highlight {
   background-color: var(--purple);
 }
