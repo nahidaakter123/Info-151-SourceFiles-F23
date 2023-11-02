@@ -16,13 +16,10 @@
 #hero section h1 {
   color: var(--white);
   margin: 10px;
-}
-#hero section #hero-title-container-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-right: 55px;
 }
 #hero section p {
   color: var(--white);
   margin-bottom: 20px;
+  margin-right: 50px;
 }

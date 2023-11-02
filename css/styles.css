@@ -471,8 +471,8 @@ header #logo-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 30% auto;
-  grid-template-columns: 30% auto;
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
 }
 
 /* =============
@@ -496,13 +496,10 @@ header #logo-container {
 #hero section h1 {
   color: var(--white);
   margin: 10px;
-}
-#hero section #hero-title-container-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-right: 55px;
 }
 #hero section p {
   color: var(--white);
   margin-bottom: 20px;
+  margin-right: 50px;
 }
