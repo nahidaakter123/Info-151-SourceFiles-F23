@@ -14,6 +14,8 @@ html {
   --black: #000000;
   --white: #ffffff;
   --light-blue:#44B4EE;
+  --dark-blue:#4B61B8;
+  --gray:#9090A7;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -332,6 +334,19 @@ template {
 /* =============
     Base
 ============= */
+#validation-logo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -377,6 +392,11 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
@@ -386,17 +406,90 @@ textarea {
 footer {
   background-color: var(--black);
 }
-footer p {
+footer #footer-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140 auto;
+  grid-template-columns: auto 1140 auto;
+      grid-template-areas: ". ftgi .";
+}
+footer #footer-top #footer-top-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ftgi;
+  -ms-grid-columns: 40% 20% 20% auto h1;
+  grid-template-columns: 40% 20% 20% auto h1;
+}
+footer #footer-top #footer-top-grid-item p {
+  color: var(--white);
+  padding-right: 100px;
+}
+footer #footer-top #footer-top-grid-item #social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+footer #footer-top #footer-top-grid-item #social-links li {
+  margin-right: 16px;
+}
+footer #footer-top #footer-top-grid-item #social-links a:link, footer #footer-top #footer-top-grid-item #social-links a:visited {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer #footer-top #footer-top-grid-item #social-links a:hover, footer #footer-top #footer-top-grid-item #social-links :active {
+  background-color: var(--light-blue);
+  color: var(--gray);
+  border: 1px solid var(--light-blue);
+}
+footer #footer-top #footer-top-grid-item a:link, footer #footer-top #footer-top-grid-item a:visited {
+  color: var(--white);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-bottom: 15px;
+}
+footer #footer-top #footer-top-grid-item a:hover, footer #footer-top #footer-top-grid-item a:active {
+  color: var(--light-blue);
+}
+footer #footer-top #footer-top-grid-item #footer-card h2 {
   color: var(--white);
 }
-footer #footer-card h2 {
+footer #footer-top #footer-top-grid-item h2 {
   color: var(--white);
 }
-footer #footer-card h2 ul li a {
-  text-decoration: none;
-  color: var(--white);
-}
-footer h3 {
+footer #footer-top #footer-top-grid-item h3 {
   color: var(--white);
   font-weight: 500;
+}
+
+#footer-bottom {
+  margin-top: 100px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140 auto;
+  grid-template-columns: auto 1140 auto;
+      grid-template-areas: ". fbgi .";
+}
+#footer-bottom p {
+  color: var(--white);
+}
+#footer-bottom #footer-bottom-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: fbgi;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
