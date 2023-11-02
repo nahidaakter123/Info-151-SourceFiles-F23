@@ -337,8 +337,8 @@ template {
 body main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1140 auto;
-  grid-template-columns: auto 1140 auto;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
       grid-template-areas: ". grid-content .";
 }
 body main #main-grid-item {
@@ -437,9 +437,24 @@ textarea {
 /* =============
     plans
 ============= */
+#plans #monthly-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#plans .plans-card {
+  text-align: center;
+}
+#plans .plans-card p {
+  padding: 0 50px;
+}
 #plans div {
   display: -ms-grid;
   display: grid;
+  gap: 30px;
 }
 #plans div h1 {
   font-weight: 700;
@@ -453,10 +468,6 @@ textarea {
   font-weight: 500;
   margin-bottom: 5px;
 }
-#plans div img {
-  text-align: center;
-}
-
 #plans-card-grid-items {
   display: -ms-grid;
   display: grid;

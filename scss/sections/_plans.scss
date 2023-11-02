@@ -2,9 +2,23 @@
     plans
 ============= */
 #plans{
+
+    #monthly-toggle{
+        display: flex;
+        justify-content: center;
+    }
+
+    .plans-card{
+        text-align: center;
+
+        p{
+            padding: 0 50px;
+        }
+    }
     
     div{
         display: grid;
+        gap:30px;
         
    
         h1{
@@ -22,7 +36,7 @@
         }
 
         img{
-            text-align: center;
+           //text-align: center;
         }
 
         }
