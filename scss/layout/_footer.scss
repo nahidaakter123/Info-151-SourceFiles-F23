@@ -6,24 +6,28 @@ footer{
     #footer-top{
 
         display: grid;
-        grid-template-columns: auto 1140 auto;
+        grid-template-columns: auto 1140px auto;
         grid-template-areas: ". ftgi .";
         
            
 
         #footer-top-grid-item{
+            border: 1px solid red;
 
             grid-area: ftgi;
-            grid-template-columns: 40% 20% 20% auto
+            display: grid;
+            grid-template-columns: 40% 20% 20% auto;
 
-            h1{
-
+            #footer-logo{
+                p{
+                    padding-right: 200px;
+                }
             }
 
          
          p{
             color: var(--white);
-            padding-right: 100px;
+           // padding-right: 100px;
 
          }
         

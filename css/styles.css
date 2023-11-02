@@ -409,20 +409,25 @@ footer {
 footer #footer-top {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1140 auto;
-  grid-template-columns: auto 1140 auto;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
       grid-template-areas: ". ftgi .";
 }
 footer #footer-top #footer-top-grid-item {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  border: 1px solid red;
   grid-area: ftgi;
-  -ms-grid-columns: 40% 20% 20% auto h1;
-  grid-template-columns: 40% 20% 20% auto h1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 20% 20% auto;
+  grid-template-columns: 40% 20% 20% auto;
+}
+footer #footer-top #footer-top-grid-item #footer-logo p {
+  padding-right: 200px;
 }
 footer #footer-top #footer-top-grid-item p {
   color: var(--white);
-  padding-right: 100px;
 }
 footer #footer-top #footer-top-grid-item #social-links {
   display: -webkit-box;
