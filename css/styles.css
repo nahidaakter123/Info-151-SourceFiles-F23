@@ -344,6 +344,7 @@ ul {
   padding: 0;
 }
 ul li {
+  font-weight: 400;
   list-style: none;
 }
 
@@ -404,6 +405,7 @@ a {
     Footer
 ============= */
 footer {
+  margin-bottom: 100px;
   background-color: var(--black);
 }
 footer #footer-top {
@@ -416,12 +418,11 @@ footer #footer-top {
 footer #footer-top #footer-top-grid-item {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  border: 1px solid red;
   grid-area: ftgi;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 20% 20% auto;
-  grid-template-columns: 40% 20% 20% auto;
+  -ms-grid-columns: 35% 20% 20% auto;
+  grid-template-columns: 35% 20% 20% auto;
 }
 footer #footer-top #footer-top-grid-item #footer-logo p {
   padding-right: 200px;
