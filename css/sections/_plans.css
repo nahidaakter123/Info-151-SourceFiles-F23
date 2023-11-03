@@ -16,7 +16,7 @@
   text-align: center;
 }
 #plans .plans-card p {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 #plans div {
   display: -ms-grid;
@@ -33,7 +33,7 @@
 #plans div h2 {
   text-align: center;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #plans-card-grid-items {
@@ -41,7 +41,6 @@
   display: grid;
   -ms-grid-columns: (2fr)[3];
   grid-template-columns: repeat(3, 2fr);
-  border: 0cap;
 }
 #plans-card-grid-items .plans-card {
   margin-top: 50px;
