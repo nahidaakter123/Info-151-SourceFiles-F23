@@ -1,7 +1,20 @@
 /* =============
     Buttons
 ============= */
+#blue-btn{
+               
+    a:link a:visited{
+        color:var(--lightblue);
+        transition: 0.25s;
 
+    }
+
+    a:hover a:active{
+        color: var(--purple);
+        transition: 0.25s;
+
+    }
+}
 
     
 
