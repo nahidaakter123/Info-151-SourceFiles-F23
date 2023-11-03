@@ -367,6 +367,7 @@ p {
   margin: 10px;
   padding: 10px;
   font-weight: 200;
+  margin-right: 96px;
 }
 
 ul {
@@ -377,22 +378,12 @@ ul {
 /* =============
     Buttons
 ============= */
-#blue-btn a:link, #blue-btn a:visited {
-  color: var(--lightblue);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-#blue-btn a:hover, #blue-btn a:active {
-  color: var(--black);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
 .lightblue-btn {
   background-color: var(--lightblue);
   color: var(--white);
   padding: 50px, 30px;
   border-radius: 50px;
+  margin-top: 20px;
 }
 .lightblue-btn a:link, .lightblue-btn a:visited {
   color: var(--lightblue);
@@ -445,11 +436,14 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
+#plans #monthly-toggle h2 {
+  font-weight: 400;
+}
 #plans .plans-card {
   text-align: center;
 }
 #plans .plans-card p {
-  padding: 0 50px;
+  padding: 0 40px;
 }
 #plans div {
   display: -ms-grid;
@@ -465,9 +459,10 @@ textarea {
 }
 #plans div h2 {
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 5px;
 }
+
 #plans-card-grid-items {
   display: -ms-grid;
   display: grid;
