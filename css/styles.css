@@ -423,7 +423,6 @@ nav ul li a:hover, nav ul li a:active {
 nav ul li .signinup-btn {
   background-color: var(--greenaqua);
   color: var(--white);
-  border-radius: 20px;
   font-family: 600;
   border: none;
   -webkit-transition: 0.25s;
@@ -445,6 +444,12 @@ header {
   -ms-grid-columns: 50% auto;
   grid-template-columns: 50% auto;
       grid-template-areas: "logo burger" "nav nav";
+}
+@media (min-width: 768px) {
+  header {
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+  }
 }
 header #logo-container {
   -ms-grid-row: 1;
