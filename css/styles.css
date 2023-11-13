@@ -367,6 +367,14 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  border: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -390,20 +398,24 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block !important;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+#mainNav {
   padding: 10px;
   display: none;
 }
 @media (min-width: 1200px) {
-  nav {
+  #mainNav {
     display: block;
   }
 }
-nav ul {
+#mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,7 +428,7 @@ nav ul {
           align-items: flex-end;
 }
 @media (min-width: 1200px) {
-  nav ul {
+  #mainNav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -431,11 +443,11 @@ nav ul {
   }
 }
 @media (min-width: 1200px) {
-  nav ul li {
+  #mainNav ul li {
     height: 50%;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li a:link, #mainNav ul li a:visited {
   padding: 10px;
   display: inline-block;
   margin-bottom: 12px;
@@ -444,15 +456,15 @@ nav ul li a:link, nav ul li a:visited {
   transition: 0.25s;
 }
 @media (min-width: 1200px) {
-  nav ul li a:link, nav ul li a:visited {
+  #mainNav ul li a:link, #mainNav ul li a:visited {
     height: 0%;
     padding: 0;
   }
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--black);
 }
-nav ul li .signinup-btn {
+#mainNav ul li .signinup-btn {
   background-color: var(--greenaqua);
   color: var(--white);
   font-family: 600;
@@ -461,7 +473,7 @@ nav ul li .signinup-btn {
   transition: 0.25s;
   cursor: pointer;
 }
-nav ul li .signinup-btn:hover {
+#mainNav ul li .signinup-btn:hover {
   background-color: var(--gray);
   color: var(--black);
 }

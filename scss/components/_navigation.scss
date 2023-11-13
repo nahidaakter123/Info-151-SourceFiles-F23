@@ -1,10 +1,15 @@
 /* =============
     Navigation
 ============= */
+.showMainNav{
+    display: block !important;
+}
+
+
 a{
     text-decoration: none;
 }
-nav{
+#mainNav{
     padding: 10px;
     display: none;
 
