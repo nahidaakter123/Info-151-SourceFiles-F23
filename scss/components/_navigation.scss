@@ -5,79 +5,69 @@
     display: block !important;
 }
 
+//.showSignIn{
+    //display: flex !important;
+    //justify-content: flex-end;
+//}
+
 
 a{
     text-decoration: none;
 }
+
 #mainNav{
-    padding: 10px;
     display: none;
 
-    @include xl{
-        //margin-top: 0;
-        //padding-top: 0;
-        display: block;
-    }
-    
     ul{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
 
         @include xl{
-            flex-direction: row;
-            justify-content: space-evenly;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            height: 50%;
+            height: 100%;
         }
-
-        
-        
         li{
+            border-bottom: 1px solid var(--gray);
+            text-align: right;
+
             @include xl{
-               height: 50%;
+                border: none;
+                text-align: center;
             }
-            a:link, a:visited{
-                padding: 10px;
-                //border: 1px solid red;
-                display: inline-block;
-                margin-bottom: 12px;
+
+            a:link,a:visited{
                 color: var(--gray);
+                font-size: 300;
                 transition: 0.25s;
-                //border-bottom: 1px solid var(--gray);
+                display: inline-block;
+                padding: 24px;
+                width: 100%;
+                box-sizing: border-box;
 
                 @include xl{
-                    height: 0%;
-                    //box-sizing: border-box;
-                    //margin-bottom: 0px;
-                    padding: 0;
+                    padding-bottom: 0;
                 }
-
             }
 
-            a:hover, a:active{
+            a:hover,a:active{
                 color: var(--black);
-
             }
-
-            .signinup-btn{
-                background-color: var(--greenaqua);
-                color: var(--white);
-                //border-radius: 500px;
-                font-family: 600;
-                border: none;
-                transition: 0.25s;
-                cursor: pointer;
-
-             }
-
-             .signinup-btn:hover{
-                background-color: var(--gray);
-                color: var(--black);
-
-             }
-
         }
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
