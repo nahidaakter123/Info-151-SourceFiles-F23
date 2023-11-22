@@ -37,3 +37,15 @@ button{
     background-color: var(--gray);
     color: var(--white);
 }
+
+.close-btn{
+    background-color:var(--red);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+
+ }
