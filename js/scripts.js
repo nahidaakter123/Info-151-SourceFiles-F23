@@ -39,9 +39,21 @@ burgerBtn.addEventListener("click",showNav);
 /* =============
     Sign Up  
 ============= */
-//var signUpBtn= document.querySelector("#sign-up-btn");
+var signUpBtn= document.querySelector("#sign-up-btn");
+var signUpContainer = document.querySelector("#sign-up-container")
+var cancelSignInModalBtn = document.querySelector("#cancel-sign-in-modal-btn")
 
-//function showSignUpModal(){
+function showSignUpModal(){
     //console.log("show modal now");
-//}
-//signUpBtn.addEventListener("click",showSignUpModal);
+    signUpContainer.classList.add("show-signUp-container");  
+    mainNav.classList.remove("showMainNav");
+    signInContainer.classList.remove("showSignIn");
+    
+}
+function hideSignUpModal(){
+    signUpContainer.classList.remove("show-signUp-container");
+
+}
+
+signUpBtn.addEventListener("click",showSignUpModal);
+cancelSignInModalBtn.addEventListener("click", hideSignUpModal);

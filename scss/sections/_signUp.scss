@@ -1,7 +1,7 @@
 /* =============
-     Sign In
+     Sign Up
 ============= */
-#sign-in-container{
+#sign-up-container{
     //background-color: var(--greenaqua);
     background-color: #024A58B3;
     height: 100vh;
@@ -24,7 +24,7 @@ form{
     border-radius: 8px;
 
 
-    #close-button-container{
+    #cancel-button-container{
         display: flex;
         justify-content: flex-end;
         margin-bottom: 24px;
@@ -40,7 +40,7 @@ form{
             border: none;
             border-radius: 8px;
         }
-        #sign-in-button-container{
+        #send-button-container{
             display: flex;
             justify-content: flex-end;
             button{

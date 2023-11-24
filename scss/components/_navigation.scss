@@ -17,6 +17,9 @@ a{
 
 #mainNav{
     display: none;
+    @include xl{
+        display: block;
+    }
 
     ul{
 

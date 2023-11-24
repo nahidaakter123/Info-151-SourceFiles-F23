@@ -335,6 +335,12 @@ template {
 /* =============
     Base
 ============= */
+.show-signUp-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -406,7 +412,7 @@ button {
   color: var(--white);
 }
 
-.close-btn {
+.cancel-btn {
   background-color: var(--red);
   height: 50px;
   width: 50px;
@@ -465,6 +471,11 @@ a {
 
 #mainNav {
   display: none;
+}
+@media (min-width: 1200px) {
+  #mainNav {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   #mainNav ul {
@@ -667,9 +678,9 @@ header #burger-container button {
 }
 
 /* =============
-     Sign In
+     Sign Up
 ============= */
-#sign-in-container {
+#sign-up-container {
   background-color: rgba(2, 74, 88, 0.7019607843);
   height: 100vh;
   padding: 16px;
@@ -686,14 +697,14 @@ header #burger-container button {
           justify-content: center;
   height: 100%;
 }
-#sign-in-container form {
+#sign-up-container form {
   background-color: rgba(2, 74, 88, 0.8);
   padding: 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
 }
-#sign-in-container form #close-button-container {
+#sign-up-container form #cancel-button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,7 +713,7 @@ header #burger-container button {
           justify-content: flex-end;
   margin-bottom: 24px;
 }
-#sign-in-container form input {
+#sign-up-container form input {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -711,7 +722,7 @@ header #burger-container button {
   border: none;
   border-radius: 8px;
 }
-#sign-in-container form #sign-in-button-container {
+#sign-up-container form #send-button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,7 +730,7 @@ header #burger-container button {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-#sign-in-container form #sign-in-button-container button {
+#sign-up-container form #send-button-container button {
   background-color: var(--greenLight);
   color: var(--white);
   border: 1PX solid var(--white);
