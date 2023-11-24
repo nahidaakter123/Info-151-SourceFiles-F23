@@ -4,9 +4,12 @@
 
 var mainNav= document.querySelector("#mainNav");
 var signInContainer = document.querySelector("#signIn-container");
-
 var burgerBtn=document.querySelector("#burger-container button");
-//console.log(burgerBtn);
+
+var burgerBars=document.querySelector("#burger-bars");
+var burgerX=document.querySelector("#burger-x");
+
+
 
 var CanYouSeeMainNav=false;
 
@@ -21,11 +24,23 @@ function showNav(){
         signInContainer.classList.add("showSignIn");
         CanYouSeeMainNav = true;
 
+        burgerBars.classList.add("hide-burger-bars");
+
+        burgerX.classList.remove("hide-burger-x");
+
+
     }else{
         console.log("hide menu");
         
         mainNav.classList.remove("showMainNav");
         signInContainer.classList.remove("showSignIn");
+
+        burgerBars.classList.remove("hide-burger-bars");
+
+        burgerX.classList.add("hide-burger-x");
+
+
+
 
         CanYouSeeMainNav = false;
     }
