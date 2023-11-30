@@ -771,8 +771,14 @@ header #burger-container button {
   grid-area: aos;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto;
+  -ms-grid-columns: 50% 16px auto;
   grid-template-columns: 50% auto;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #animateonscroll #aos-grid-item {
+    grid-auto-columns: repate(4, 1fr);
+  }
 }
 #animateonscroll #aos-grid-item img {
   width: 100%;
