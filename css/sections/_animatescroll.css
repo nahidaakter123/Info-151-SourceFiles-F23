@@ -1,0 +1,22 @@
+/* =============
+     Animate Scroll
+============= */
+#animatescroll {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+#as-grid-item {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.as-fl {
+  -webkit-transform: rotate(2500px) rotateY(-100deg);
+          transform: rotate(2500px) rotateY(-100deg);
+}

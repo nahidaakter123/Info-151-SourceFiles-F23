@@ -1,3 +1,21 @@
+
+AOS.init();
+
+/* =============
+    Animate On Scroll  
+============= */
+/* document.addEventListener('aos:in', ({ detail }) => {
+    console.log('animated in', detail);
+  });
+  
+  document.addEventListener('aos:out', ({ detail }) => {
+    console.log('animated out', detail);
+  }); */
+
+
+
+
+
 /* =============
     Navigation
 ============= */
@@ -72,3 +90,5 @@ function hideSignUpModal(){
 
 signUpBtn.addEventListener("click",showSignUpModal);
 cancelSignInModalBtn.addEventListener("click", hideSignUpModal);
+
+
