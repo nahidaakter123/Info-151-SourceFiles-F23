@@ -16,9 +16,10 @@ nav{
             margin-left: 30px;
             a:link, a:visited{
                 color: var(--white);
-                font-size: rem-calc(14);
-                font-weight: 600;
+                font-size: rem-calc(18);
+                //font-weight: 600;
                 transition: 0.25s;
+                margin-left: 60px;
 
             }
 
