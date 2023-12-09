@@ -337,6 +337,7 @@ template {
 ============= */
 body {
   font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
 
 h1, h2, h4, h5 {
@@ -393,7 +394,6 @@ footer #footer-card h2 {
   color: var(--white);
 }
 footer #footer-card h2 ul li a {
-  text-decoration: none;
   color: var(--white);
 }
 footer h3 {
