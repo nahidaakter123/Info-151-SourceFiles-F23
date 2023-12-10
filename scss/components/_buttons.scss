@@ -1,23 +1,33 @@
 /* =============
     Buttons
 ============= */
+button{
+    border: none;
+}
 
-.lightblue-btn{
-background-color: var(--lightblue);
-color: var(--white);
-padding:40px, 20px;
-border-radius: 10px; 
-a:link, a:visited{
-    color: var(--lightblue);
-    transition: 0.25s;
+.blue-btn{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    a:link, a:visited{
+        color: var(--white);
+        transition: 0.25s;
+    
+    }
+    
+    a:hover, a:active{
+        color: var(--black);
+        transition: 0.25s;
+    }
 
 }
 
-a:hover, a:active{
-    color: var(--black);
-    transition: 0.25s;
-
-
+.disabled-btn{
+    background-color: var(--blueLight);
+    color: var(--blue);
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 
-}
+
